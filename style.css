@@ -1,4 +1,11 @@
 /* UNIVERSAL */
+@font-face {
+    font-family: 'Brittany Signature';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Brittany Signature'), url('https://fonts.cdnfonts.com/s/39082/BrittanySignature-LjyZ.woff') format('woff');
+}
+
 html {
     position: relative;
 }
@@ -93,7 +100,7 @@ h5.author {
 }
 
 h1.display-4 {
-    font-size: 42px;
+    font-size: 38px;
     margin-top: 50px;
     color: #fff !important;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
