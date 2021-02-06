@@ -173,10 +173,18 @@ section.contact {
     background-color: rgba(37, 160, 177, 0.9);
 }
 
+h1[name="contact-title"] {
+    font-size: 24px;
+}
+
 /* FOOTER */
 footer {
     color: #fff;
     background-color: rgba(48, 57, 82, 1);
+}
+
+footer p {
+    font-size: 14px;
 }
 
 footer a {
@@ -301,10 +309,20 @@ i {
         height: 200px;
     }
 
+    h1[name="contact-title"] {
+        font-size: 34px;
+    }
+
     /* FOOTER */
     footer h3 {
         margin-top: 0;
     }
+
+    footer p {
+        font-size: 16px;
+    }
+
+
 
     /* UTILITY */
     .card-title {
