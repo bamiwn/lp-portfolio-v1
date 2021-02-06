@@ -1,0 +1,327 @@
+/* UNIVERSAL */
+html {
+    position: relative;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+section {
+    padding: 100px 0;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+hr {
+    border: 0.1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card {
+    margin-top: 50px;
+    padding: 50px 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(17, 26, 104, 0.3);
+}
+
+.card p {
+    text-align: justify;
+}
+
+thead {
+    background-color: rgba(48, 57, 82, 1);
+}
+
+table tr:nth-child(2n) {
+    background-color: rgba(48, 57, 82, 0.1);
+}
+
+a .img-thumbnail {
+    margin-top: 50px;
+    transform: scaleY(1.15);
+    transition: 0.5s ease-in-out;
+    filter: drop-shadow(0 6px 15px rgba(17, 26, 104, 0.2));
+}
+
+a .img-thumbnail:hover {
+    transform: scaleY(1.2) translateY(-10px);
+    filter: drop-shadow(0 6px 15px rgba(17, 26, 104, 0.4));
+}
+
+
+/* JUMBOTRON */
+.jumbotron {
+    z-index: 0;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('img/portfolio/bg.jpg');
+}
+
+.jumbotron::after {
+    top: 0;
+    z-index: 1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-image: radial-gradient(rgba(154, 164, 189, 0.2), rgba(48, 57, 82, 1));
+}
+
+.jumbotron h1.display-4,
+a.btn,
+h5.author {
+    z-index: 2;
+    position: relative;
+}
+
+h1.display-4 {
+    font-size: 42px;
+    margin-top: 50px;
+    color: #fff !important;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+h5.author {
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Brittany Signature', sans-serif;
+}
+
+
+
+/* NAVIGASI */
+nav {
+    z-index: 999;
+    position: relative;
+    background-color: rgba(48, 57, 82, 1);
+}
+
+nav .container {
+    padding: 10px 0;
+}
+
+a.navbar-brand,
+.nav-link,
+nav .btn {
+    margin-left: 15px;
+    color: #fff !important;
+}
+
+nav button {
+    margin-right: 15px;
+}
+
+
+.nav-scroll-js {
+    top: 0;
+    z-index: 999;
+    margin: 10px 0;
+    position: sticky;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* ABOUT */
+section.about img {
+    width: 170px;
+    height: 170px;
+    filter: drop-shadow(0 6px 15px rgba(17, 26, 104, 0.3));
+}
+
+.card-title {
+    text-align: center;
+}
+
+/* PORTFOLIO */
+section.portfolio .card {
+    padding: 0;
+}
+
+section.portfolio .btn {
+    margin-bottom: 50px;
+}
+
+/* CONTACT */
+section.contact {
+    padding: 50px;
+    background-color: rgba(37, 160, 177, 0.9);
+}
+
+/* FOOTER */
+footer {
+    color: #fff;
+    background-color: rgba(48, 57, 82, 1);
+}
+
+footer a {
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer h3 {
+    margin-top: 30px;
+}
+
+footer .container {
+    padding: 50px 50px 0;
+}
+
+footer .copyright {
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+/* UTILITY */
+.color-kedua {
+    color: rgba(48, 57, 82, 1) !important;
+}
+
+.color-kedua-80 {
+    color: rgba(48, 57, 82, 0.8) !important;
+}
+
+.btn-utama {
+    color: #fff;
+    transition: .4s ease-in-out;
+    background-color: rgba(41, 180, 199, 0.9);
+}
+
+.btn-utama:hover {
+    color: #fff;
+    background-color: rgba(37, 160, 177, 0.9);
+}
+
+.btn-kedua {
+    color: #fff;
+    transition: .4s ease-in-out;
+    background-color: rgba(52, 73, 94, 1.0);
+}
+
+.btn-kedua:hover {
+    color: #fff;
+    background-color: rgba(48, 57, 82, 1);
+}
+
+.btn-scale:hover {
+    transform: scale(1.2, 1.15);
+}
+
+i {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+/* DEKSTOP VERSION */
+@media (min-width: 992px) {
+
+    /* GLOBAL */
+    .card {
+        margin-top: 0;
+        padding: 55px 24px;
+    }
+
+    .img-thumbnail {
+        margin-top: 20px;
+    }
+
+    /* JUMBOTRON */
+    .jumbotron {
+        margin-top: -90px;
+        height: 600px;
+        position: relative;
+    }
+
+    h1.display-4 {
+        font-size: 54px;
+        margin-top: 130px;
+    }
+
+    /* NAVIGASI */
+    nav {
+        margin: 0;
+        background-color: rgba(48, 57, 82, 0);
+    }
+
+    .nav-link {
+        font-size: 18px;
+        margin-right: 20px;
+        text-transform: uppercase;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-link:hover {
+        margin-bottom: -3px;
+        border-bottom: 3px solid rgba(41, 180, 199, 0.8);
+    }
+
+    /* ABOUT */
+    section.about img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* FOOTER */
+    footer h3 {
+        margin-top: 0;
+    }
+
+    /* UTILITY */
+    .card-title {
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+
+
+
+
+}
